@@ -27,7 +27,39 @@
 .App-link {
   color: #61dafb;
 }
-
+body{
+  background-color: #efefef;
+}
+.searchInput {
+  width: 300px !important;
+  border-radius: 10px;
+}
+.imbdCol{
+  border-left : 3px solid #efefef
+}
+.imbdText{
+  line-height: 119px;
+  margin-bottom: 0px !important;
+}
+.relDateP{
+  font-size:14px;
+  font-weight: 600;
+}
+.gen_Rel_Div{
+  margin-top:48px;
+}
+.genreUl{
+  list-style-type:none;
+  margin-bottom: 0 !important;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  background: #efefef;
+  font-size: 14px;
+  font-weight: 600;
+}
+.crd-plot{
+  font-weight: 700;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
