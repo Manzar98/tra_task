@@ -13,7 +13,8 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 const movie = require('./api/movies/movie.controller');
 
 app.post('/api/getMoviesList',movie.getMoviesList)
-app.post('/api/getSingleMovie',movie.show)
+app.post('/api/getMovieDetails',movie.getMovieDetails)
+// app.get('/api/comments',)
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req,res) => {
     var list = ["item1", "item2", "item3"];

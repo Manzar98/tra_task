@@ -22,7 +22,7 @@ var movieSchema = new Schema({
     year : Number,
     imdb : Object,
     countries : Array,
-    type : String,
+    type : String
 }
 );
 
