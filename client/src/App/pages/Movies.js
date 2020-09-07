@@ -128,20 +128,4 @@ const Movies = () => {
     </Container>
   );
 };
-// class Movies extends Component {
-//   render() {
-//     return (
-//     <div className="App">
-//       <h1>Movies</h1>
-//       {/* Link to List.js */}
-//       {/* <Link to={'./list'}>
-//         <button variant="raised">
-//             My List
-//         </button>
-//       </Link> */}
-//     </div>
-//     );
-//   }
-// }
-
 export default Movies;
