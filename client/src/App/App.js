@@ -13,7 +13,7 @@ class App extends Component {
       <div>
         <Switch>
           <Route exact path='/' component={Movies}/>
-          <Route path='/list' component={List}/>
+          <Route path='/list/:id' component={List}/>
         </Switch>
       </div>
     )

@@ -26,10 +26,12 @@
 
 .App-link {
   color: #61dafb;
-}
-body{
+ }
+
+
+.App{
   background-color: #efefef;
-}
+} 
 .searchInput {
   width: 300px !important;
   border-radius: 10px;
@@ -54,11 +56,57 @@ body{
   border: 1px solid #efefef;
   border-radius: 5px;
   background: #efefef;
-  font-size: 14px;
   font-weight: 600;
+  padding: 1px 8px;
+  font-size: 13px;
 }
 .crd-plot{
   font-weight: 700;
+}
+.mainCrdBody{
+  cursor: pointer;
+}
+.detailCrd{
+  border : 0px;
+}
+.detailCrdHeader{
+  border:0px;
+  background: #fff;
+}
+.btnBg{
+  background-color: #efefef;
+  color:#000;
+  font-weight: 500;
+  border:0px
+}
+.cusH4{
+  font-size:19px;
+  font-weight: 700;
+}
+.liSize{
+  font-size: 14px;
+}
+.sizeH6{
+  font-weight: 700;
+}
+.plotDiv{
+  padding-left: 14px;
+}
+.h4Text{
+  font-size:17px;
+}
+.commentName{
+  font-size:13px;
+}
+.commentDate{
+  font-size:13px;
+  font-weight: 700;
+  clear: both;
+}
+.commentText{
+  font-size: 15px;
+  width: 100%;
+  font-weight: 500;
 }
 @keyframes App-logo-spin {
   from {

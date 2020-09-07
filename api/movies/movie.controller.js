@@ -4,13 +4,22 @@ const controller = {};
 
 controller.getMoviesList = (req, res) => {
   try {
-    let agri = [{ $sample: { size: 10 } }];
-    MOVIE.aggregate(agri, function (err, result) {
-      if (err) {
-        return handleError(res, err);
+    /*== For getting limited random records==*/
+
+    // let agri = [{ $sample: { size: 10 } }];
+    // MOVIE.aggregate(agri, function (err, result) {
+    //   if (err) {
+    //     return handleError(res, err);
+    //   }
+    //   return res.status(200).json({ status: true, model: result });
+    // });
+
+    MOVIE.find({},function(err,result){
+      if(err) {
+        return console.log(err, "Error in getting List From Backend")
       }
       return res.status(200).json({ status: true, model: result });
-    });
+    }).skip(500).limit(10)
   } catch (error) {
     console.log(error, "Error in getting Movies List");
   }
@@ -23,7 +32,7 @@ controller.getMoviesList = (req, res) => {
 controller.getMovieDetails = (req, res) => {
   try {
     let id = req.body.movie_id;
-    let con = { _id: id };
+    let con = { _id: id};
     let commentArray = [];
     MOVIE.findOne(con, async function (err, model) {
       if (err) {
